@@ -14,7 +14,7 @@ source:
 
 build:
   skip: true  # [win]
-  number: 1
+  number: 2
 
   # add build string so packages can depend on mpi variants explicitly:
   # `pkg * mpi_mpich_*` for mpich
@@ -37,7 +37,7 @@ requirements:
   host:
     - {{ mpi }}
     - fftw * mpi_{{ mpi }}_*
-    - hdf5 * mpi_{{ mpi }}_*
+    - hdf5 {{ hdf5 }} mpi_{{ mpi }}_*
   run:
     - {{ mpi }}
 
