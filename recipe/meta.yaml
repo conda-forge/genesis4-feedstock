@@ -14,7 +14,7 @@ source:
 
 build:
   skip: true  # [win]
-  number: 2
+  number: 3
 
   # add build string so packages can depend on mpi variants explicitly:
   # `pkg * mpi_mpich_*` for mpich
@@ -62,4 +62,3 @@ extra:
   recipe-maintainers:
     - ken-lauer
     - ChristopherMayes
-    - klauer-xlight
