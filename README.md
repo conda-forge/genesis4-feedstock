@@ -459,5 +459,5 @@ Feedstock Maintainers
 =====================
 
 * [@ChristopherMayes](https://github.com/ChristopherMayes/)
-* [@klauer-xlight](https://github.com/klauer-xlight/)
+* [@ken-lauer](https://github.com/ken-lauer/)
 
