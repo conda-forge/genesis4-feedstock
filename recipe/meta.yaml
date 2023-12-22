@@ -1,5 +1,5 @@
 {% set name = "genesis4" %}
-{% set version = "4.6.4" %}
+{% set version = "4.6.5" %}
 
 # ensure mpi is defined (needed for conda-smithy recipe-lint)
 {% set mpi = mpi or 'mpich' %}
@@ -10,11 +10,11 @@ package:
 
 source:
   url: https://github.com/svenreiche/Genesis-1.3-Version4/archive/v{{ version }}.tar.gz
-  sha256: c53ba86343bebd965ce3c358e3db13a4ebb3f47d6e0590427fb82a7593f004dc
+  sha256: cdb8632df5c5ebf9d23ae295b02602971eeef779b28bdd74dfb50bf36f31459e
 
 build:
   skip: true  # [win]
-  number: 3
+  number: 0
 
   # add build string so packages can depend on mpi variants explicitly:
   # `pkg * mpi_mpich_*` for mpich
