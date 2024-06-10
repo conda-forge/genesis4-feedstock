@@ -8,63 +8,16 @@ jobs:
     vmImage: ubuntu-latest
   strategy:
     matrix:
-      linux_64_hdf51.10.6mpimpich:
-        CONFIG: linux_64_hdf51.10.6mpimpich
+      linux_64_mpimpich:
+        CONFIG: linux_64_mpimpich
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_hdf51.10.6mpiopenmpi:
-        CONFIG: linux_64_hdf51.10.6mpiopenmpi
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_hdf51.12.0mpimpich:
-        CONFIG: linux_64_hdf51.12.0mpimpich
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_hdf51.12.0mpiopenmpi:
-        CONFIG: linux_64_hdf51.12.0mpiopenmpi
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_hdf51.12.1mpimpich:
-        CONFIG: linux_64_hdf51.12.1mpimpich
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_hdf51.12.1mpiopenmpi:
-        CONFIG: linux_64_hdf51.12.1mpiopenmpi
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_hdf51.12.2mpimpich:
-        CONFIG: linux_64_hdf51.12.2mpimpich
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_hdf51.12.2mpiopenmpi:
-        CONFIG: linux_64_hdf51.12.2mpiopenmpi
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_hdf51.14.1mpimpich:
-        CONFIG: linux_64_hdf51.14.1mpimpich
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_hdf51.14.1mpiopenmpi:
-        CONFIG: linux_64_hdf51.14.1mpiopenmpi
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_hdf51.14.2mpimpich:
-        CONFIG: linux_64_hdf51.14.2mpimpich
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_hdf51.14.2mpiopenmpi:
-        CONFIG: linux_64_hdf51.14.2mpiopenmpi
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_hdf51.14.3mpimpich:
-        CONFIG: linux_64_hdf51.14.3mpimpich
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_hdf51.14.3mpiopenmpi:
-        CONFIG: linux_64_hdf51.14.3mpiopenmpi
+      linux_64_mpiopenmpi:
+        CONFIG: linux_64_mpiopenmpi
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
   timeoutInMinutes: 360
+  variables: {}
 
   steps:
   # configure qemu binfmt-misc running.  This allows us to run docker containers
