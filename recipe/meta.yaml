@@ -14,7 +14,7 @@ source:
 
 build:
   skip: true  # [win]
-  number: 0
+  number: 1
 
   # add build string so packages can depend on mpi variants explicitly:
   # `pkg * mpi_mpich_*` for mpich
