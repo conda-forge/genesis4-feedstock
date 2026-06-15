@@ -17,6 +17,8 @@ package:
 source:
   url: https://github.com/svenreiche/Genesis-1.3-Version4/archive/v{{ version }}.tar.gz
   sha256: f9ffd96626b1d09f4831edaf23bfcf6d74123818216c890bde8330acaa945e9e
+  patches:
+    - patches/old-hdf5.patch
 
 build:
   skip: true  # [win]
