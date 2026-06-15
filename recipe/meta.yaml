@@ -44,7 +44,7 @@ requirements:
   host:
     - {{ mpi }}
     - fftw * mpi_{{ mpi }}_*
-    - hdf5 {{ hdf5 }} mpi_{{ mpi }}_*
+    - hdf5 * mpi_{{ mpi }}_*
   run:
     - {{ mpi }}
 
