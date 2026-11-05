@@ -1,5 +1,5 @@
 {% set name = "genesis4" %}
-{% set version = "4.6.15" %}
+{% set version = "4.6.16" %}
 
 {% set build = 0 %}
 # ensure mpi is defined (needed for conda-smithy recipe-lint)
@@ -16,7 +16,7 @@ package:
 
 source:
   url: https://github.com/svenreiche/Genesis-1.3-Version4/archive/v{{ version }}.tar.gz
-  sha256: 240f14d952842ebd5961eeda7f852fa83e628007a310d975bfc1fd83ce1069d2
+  sha256: 4e62d7c0301fef36a24234d9420f6ddd1f265a9bfd740e61428cf4942d12308d
 
 build:
   skip: true  # [win]
